@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/javascripts/global.js"></script>
+<h1><%= title %></h1>
+
+<div id="wrapper">
+
+    <h2>userlist</h2>
+
+    <div id="userList">
+        <h3>User Info</h3>
+        <b>Username:</b>
+        <span id="username"></span><br>
+        <b>UserEmail:</b>
+        <span id="usermail"></span><br>
+        <b>Age:</b>
+        <span id="age"></span><br>
+        <b>Location:</b>
+        <span id="location"></span><br>
+        <b>Gender:</b>
+        <span id="gender"></span>
+
+        <br> <br> <br>
+        <table>
+            <tbody>
+            <thead>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Delete or Update</th>
+            </thead>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="addUserPanel">
+        <div id="adduser">
+            <h2>ADD USER</h2>
+            <fieldset>
+                <input type="text" id="ausername" placeholder="Enater the user Name"/>
+                <input type="email" id="aemail" placeholder="Enter our Email Id"/><br>
+                <input type="text" id="afullname" placeholder="Enter your Full Name"/>
+                <input type="text" id="aage" placeholder="Enter the Age"/></br>
+                <input type="text" id="alocation" placeholder="Enter the Loaction"/>
+                <input type="text" id="agender" placeholder="Enter The Gender"/>
+                <button id="btnAddUser">Add User</button>
+            </fieldset>
+        </div>
+    </div>
+
+    <div id="updateUserPanel">
+        <h2>UPDATE USER</h2>
+
+        <div id="updateUser">
+            <fieldset>
+                <input type="text" id="upusername" placeholder="username"/>
+                <input type="email" id="upemail" placeholder="usermail"/><br>
+                <input type="text" id="upfullname" placeholder="fullname"/>
+                <input type="text" id="upage" placeholder="age"/></br>
+                <input type="text" id="uplocation" placeholder="Location"/>
+                <input type="text" id="upgender" placeholder="gender"/>
+                <button id="btnUpdateUser">Update User</button>
+                <button id="btnCancelUpdateUser">Cancel</button>
+
+            </fieldset>
+
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
+
+
